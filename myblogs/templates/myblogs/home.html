@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myblogs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
   </head>
 
   <body>
     {% include 'myblogs/navbar.html' %}
 
+    <!--  -->
+    <div class="text-center alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Hello!</strong> Contact Us at Email- xxx@gmail.com  
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!--  -->
+
+
     <!-- Carousel starts here -->
-    <h1 class="alert alert-success text-center">Welcome to home page</h1>
+    <h1 class="alert alert-success text-center">Welcome to DC Blogs</h1>
     <div
       id="carouselExampleAutoplaying"
       class="carousel slide"
@@ -83,7 +95,7 @@
 
     <!--Blog category starts here-->
     <div class="container text-center">
-      <h1 class="alert alert-dark">Blog Categories</h1>
+      <h1 class="alert alert-dark mt-2">Blog Categories</h1>
       {% if category %}
       <div class="d-flex flex-wrap justify-content-evenly">
         {% for y in category %}
