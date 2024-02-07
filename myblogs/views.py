@@ -88,7 +88,7 @@ def allblogs(request):
     p = Paginator(x, 3)
     page_number = request.GET.get("page")
     page_obj = p.get_page(page_number)
-    return render(request,'myBlogs/allblogs.html',{"y":x})
+    return render(request,'myblogs/allblogs.html',{"y":x})
 
 
 
